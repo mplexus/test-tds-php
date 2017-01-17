@@ -5,12 +5,13 @@
                'content' => json_encode([
                   'card'  => [
                     'number' => '5892420000000943',
-                    'name' => 'Mike Plexousakis',
+                    'holder_name' => 'Mike Plexousakis',
                     'cvv' => '347',
-                    'exp_date' => '01/20'
+                    'exp_month' => '01',
+                    'exp_year' => '20'
                   ],
                   'amount' => '1800',
-                  'pk' => 'pk_nknDsvb04gH36GTIO2Ho2n5VbUukkVTQ'	
+                  'pk' => 'pk_nknDsvb04gH36GTIO2Ho2n5VbUukkVTQ'
                ]),
                'header' => 'Content-Type: application/json',
            ]
@@ -32,7 +33,7 @@
 Will POST to <?= $ra['url'] ?>
 <br/><br/>
 <form method="POST" action="<?= $ra['url'] ?>" target="tds">
-<textarea rows="10" cols="80" name="PaReq"><?= $ra['pares'] ?></textarea>
+<textarea rows="10" cols="80" name="PaReq"><?= $ra['payload']['pares'] ?></textarea>
 <br/><br/>
 <input style="width:500;" value="<?= $ra['term_url'] ?>" type="text" name="TermUrl"/>
 <br/><br/>
@@ -47,4 +48,3 @@ Will POST to <?= $ra['url'] ?>
 </script>
 </body>
 </html>
-
