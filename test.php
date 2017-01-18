@@ -16,7 +16,7 @@
                'header' => 'Content-Type: application/json',
            ]
        ];
-       $uri = 'http://checkout.torawallet.local/threedsecure';
+       $uri = 'http://checkout.torawallet.gr/threedsecure';
 
        $context = stream_context_create($httpContextOptions);
        $fp = fopen($uri, 'r', false, $context);
