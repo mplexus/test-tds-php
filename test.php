@@ -11,7 +11,7 @@
                     'exp_year' => '20'
                   ],
                   'amount' => '1800',
-                  'pk' => 'pk_nknDsvb04gH36GTIO2Ho2n5VbUukkVTQ'
+                  'pk' => 'pk_1bTWeqC6336eo8FYkfyRSNSpOiF52fjD'
                ]),
                'header' => 'Content-Type: application/json',
            ]
@@ -35,9 +35,9 @@ Will POST to <?= $ra['url'] ?>
 <form method="POST" action="<?= $ra['url'] ?>" target="tds">
 <textarea rows="10" cols="80" name="PaReq"><?= $ra['payload']['pares'] ?></textarea>
 <br/><br/>
-<input style="width:500;" value="<?= $ra['term_url'] ?>" type="text" name="TermUrl"/>
+<input style="width:500;" value="<?= $ra['payload']['term_url'] ?>" type="text" name="TermUrl"/>
 <br/><br/>
-<input style="width:500;" value="<?= $ra['md'] ?>" name="MD" type="text"/>
+<input style="width:500;" value="<?= $ra['payload']['md'] ?>" name="MD" type="text"/>
 <br/><br/>
 <input type="submit"/>
 </form>
